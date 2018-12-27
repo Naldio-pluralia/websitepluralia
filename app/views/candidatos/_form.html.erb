@@ -1,0 +1,56 @@
+<style>
+  label {
+    margin-top: 10px;
+  }
+  input[type=submit] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+</style>
+<%= form_with(model: candidato, local: true, html: { multipart: true }) do |form| %>
+  <% if candidato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(candidato.errors.count, "error") %> prohibited this candidato from being saved:</h2>
+
+      <ul>
+      <% candidato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, {class:'form-control'}%>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, {class:'form-control'} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contacto %>
+    <%= form.text_field :contacto, {class:'form-control'} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :morada %>
+    <%= form.text_field :morada, {class:'form-control'} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cv_file_name, 'CV'%>
+    <%= form.file_field :cv_file_name, {class:'form-control-file'}%>
+  </div>
+
+  <div class="field">
+    <%= form.label :mensagem %>
+    <%= form.text_area :mensagem, {class:'form-control'} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit({value:'Submter Candidatura', class:'btn btn-success'})%>
+  </div>
+<% end %>

@@ -440,3 +440,74 @@ h2.section-title + p {
 .info-gestao {
 	line-height: 35px;
 }
+
+@media only screen and (max-width: 600px) {
+	#menu {
+		padding: 10px 4px;
+	}
+	#footer h3 {
+		font-size: 2em;
+	}
+	#footer h3,p,address {
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	#footer p {
+		line-height: 26px;
+		
+	}
+	#footer #texto-sobre-nos {
+		display: none;
+	}
+	#footer {
+		padding-top: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	#after {
+		margin-bottom: 1000px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.navbar-header a.navbar-brand {
+		
+	}
+	#menu {
+		padding: 10px 4px;
+	}
+	#footer h3 {
+		font-size: 2em;
+	}
+	#footer h3,p,address {
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	#footer p {
+		line-height: 26px;
+		
+	}
+	#footer #texto-sobre-nos {
+		display: none;
+	}
+	#footer {
+		padding-top: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	#after {
+		margin-bottom: 1000px;
+	}
+}
+
+.logo {
+	width: 160px;
+	height: 68px;
+	background: url('http://pluralia.net/Content/app/images/logo.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 5px;
+}
+
+#after {
+	margin-bottom: 82px;
+}

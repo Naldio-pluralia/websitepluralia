@@ -1,0 +1,20 @@
+<!-- START SECTION -->
+<div class="section hero text-center background-dark dark-bg">
+  <div class="background-image" style="background: url('/assets/img_bg_1.jpg') no-repeat center center; background-size: cover; opacity: .5;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">Candidaturas</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!--.section -->
+<div class="section">
+  <div class='container'>
+    <p id="notice"><%# notice %></p>
+    <h3 class="section-title text-center">Junte-se à Plurália</h3>
+
+    <%= render 'form', candidato: @candidato %>
+  </div>
+</div>
